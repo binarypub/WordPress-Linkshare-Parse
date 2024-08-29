@@ -305,15 +305,6 @@ if ($total > 1) {
 #In future cases if something changes with wp_insert_post function, use this SQL to insert records the old fashioned way.  We don't need it now.  Hopefully never will.
 # No need to be concerned about SQL injection here since data input is from a trusted feed source
 
-
-/*
-$q = "INSERT INTO wp_posts (post_author, post_date, post_date_gmt, post_content, post_title , post_excerpt, post_status, comment_status, ping_status, post_password, post_name, to_ping, pinged, post_modified, post_modified_gmt, post_content_filtered, post_parent, guid, 
-menu_order, post_type) VALUES ('3', NOW(), NOW(), '$offerdescription', '$advertisername - $promotiontype', '$offerdescription', 'publish', 'open', 'open', '', '$offerdescription', '', '', NOW(), NOW(),'','', '','','post')";
-
-$q_result = mysql_query($q,$wp_conn) or die ("Couldn't execute query. $q.");
-*/
-
-
 #construct array to pass to wp_insert_post
 
 				$my_post = array();
