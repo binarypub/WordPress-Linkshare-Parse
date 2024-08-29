@@ -477,7 +477,7 @@ $wp_post_id_sql_result = mysql_query($wp_post_id_sql,$wp_conn) or die ("Couldn't
 
 #Table prefix variable stored in WP config
 
-	  $result = mysql_query("SELECT term_taxonomy_id FROM ".$table_prefix."term_taxonomy");
+$result = mysql_query("SELECT term_taxonomy_id FROM ".$table_prefix."term_taxonomy");
 		while ($row = mysql_fetch_array($result)) {
 		$term_taxonomy_id = $row['term_taxonomy_id'];
 		//echo "term_taxonomy_id: ".$term_taxonomy_id." count = ";
